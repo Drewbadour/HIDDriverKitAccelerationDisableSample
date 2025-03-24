@@ -1,0 +1,639 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3A8961CD2A1C7228001AE6BD /* DeliberateDriverLoaderApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A8961CC2A1C7228001AE6BD /* DeliberateDriverLoaderApp.swift */; };
+		3A8961CF2A1C7228001AE6BD /* SimpleDriverLoaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A8961CE2A1C7228001AE6BD /* SimpleDriverLoaderView.swift */; };
+		3A8961D12A1C7229001AE6BD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3A8961D02A1C7229001AE6BD /* Assets.xcassets */; };
+		3A8961D52A1C7229001AE6BD /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3A8961D42A1C7229001AE6BD /* Preview Assets.xcassets */; };
+		3A8961FD2A1C7276001AE6BD /* DriverKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A8961FC2A1C7276001AE6BD /* DriverKit.framework */; };
+		3A8962002A1C7276001AE6BD /* DeliberateMouseDriver.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3A8961FF2A1C7276001AE6BD /* DeliberateMouseDriver.cpp */; };
+		3A8962022A1C7276001AE6BD /* DeliberateMouseDriver.iig in Sources */ = {isa = PBXBuildFile; fileRef = 3A8962012A1C7276001AE6BD /* DeliberateMouseDriver.iig */; };
+		3A8962062A1C7276001AE6BD /* com.vestigl.DeliberateDriverLoader.DeliberateMouseDriver.dext in Embed System Extensions */ = {isa = PBXBuildFile; fileRef = 3A8961FA2A1C7276001AE6BD /* com.vestigl.DeliberateDriverLoader.DeliberateMouseDriver.dext */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		3A89620C2A1C766A001AE6BD /* HIDDriverKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A89620B2A1C766A001AE6BD /* HIDDriverKit.framework */; };
+		3AE664472D90F1FE00AC55D1 /* SimpleDriverLoaderModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AE664462D90F1FE00AC55D1 /* SimpleDriverLoaderModel.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3A8962042A1C7276001AE6BD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3A8961BF2A1C71FC001AE6BD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3A8961F92A1C7276001AE6BD;
+			remoteInfo = DeliberateMouseDriver;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		3A89620A2A1C7276001AE6BD /* Embed System Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(SYSTEM_EXTENSIONS_FOLDER_PATH)";
+			dstSubfolderSpec = 16;
+			files = (
+				3A8962062A1C7276001AE6BD /* com.vestigl.DeliberateDriverLoader.DeliberateMouseDriver.dext in Embed System Extensions */,
+			);
+			name = "Embed System Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		3A75FB842A1DC3070017C880 /* DeliberateMouseDriver.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = DeliberateMouseDriver.entitlements; sourceTree = "<group>"; };
+		3A77883C2CECE22000ADEF45 /* DeliberateDriverLoader.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = DeliberateDriverLoader.xctestplan; sourceTree = "<group>"; };
+		3A8961C92A1C7228001AE6BD /* DeliberateDriverLoader.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DeliberateDriverLoader.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3A8961CC2A1C7228001AE6BD /* DeliberateDriverLoaderApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeliberateDriverLoaderApp.swift; sourceTree = "<group>"; };
+		3A8961CE2A1C7228001AE6BD /* SimpleDriverLoaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleDriverLoaderView.swift; sourceTree = "<group>"; };
+		3A8961D02A1C7229001AE6BD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3A8961D22A1C7229001AE6BD /* DeliberateDriverLoader.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = DeliberateDriverLoader.entitlements; sourceTree = "<group>"; };
+		3A8961D42A1C7229001AE6BD /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		3A8961FA2A1C7276001AE6BD /* com.vestigl.DeliberateDriverLoader.DeliberateMouseDriver.dext */ = {isa = PBXFileReference; explicitFileType = "wrapper.driver-extension"; includeInIndex = 0; path = com.vestigl.DeliberateDriverLoader.DeliberateMouseDriver.dext; sourceTree = BUILT_PRODUCTS_DIR; };
+		3A8961FC2A1C7276001AE6BD /* DriverKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = DriverKit.framework; path = System/Library/Frameworks/DriverKit.framework; sourceTree = SDKROOT; };
+		3A8961FF2A1C7276001AE6BD /* DeliberateMouseDriver.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = DeliberateMouseDriver.cpp; sourceTree = "<group>"; };
+		3A8962012A1C7276001AE6BD /* DeliberateMouseDriver.iig */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.iig; path = DeliberateMouseDriver.iig; sourceTree = "<group>"; };
+		3A8962032A1C7276001AE6BD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3A89620B2A1C766A001AE6BD /* HIDDriverKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HIDDriverKit.framework; path = Platforms/DriverKit.platform/Developer/SDKs/DriverKit.sdk/System/DriverKit/System/Library/Frameworks/HIDDriverKit.framework; sourceTree = DEVELOPER_DIR; };
+		3AE664462D90F1FE00AC55D1 /* SimpleDriverLoaderModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleDriverLoaderModel.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3A8961C62A1C7228001AE6BD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3A8961F72A1C7276001AE6BD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3A8961FD2A1C7276001AE6BD /* DriverKit.framework in Frameworks */,
+				3A89620C2A1C766A001AE6BD /* HIDDriverKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3A8961BE2A1C71FC001AE6BD = {
+			isa = PBXGroup;
+			children = (
+				3A77883C2CECE22000ADEF45 /* DeliberateDriverLoader.xctestplan */,
+				3A8961CB2A1C7228001AE6BD /* DeliberateDriverLoader */,
+				3A8961FE2A1C7276001AE6BD /* DeliberateMouseDriver */,
+				3A8961FB2A1C7276001AE6BD /* Frameworks */,
+				3A8961CA2A1C7228001AE6BD /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3A8961CA2A1C7228001AE6BD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3A8961C92A1C7228001AE6BD /* DeliberateDriverLoader.app */,
+				3A8961FA2A1C7276001AE6BD /* com.vestigl.DeliberateDriverLoader.DeliberateMouseDriver.dext */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3A8961CB2A1C7228001AE6BD /* DeliberateDriverLoader */ = {
+			isa = PBXGroup;
+			children = (
+				3A8961CC2A1C7228001AE6BD /* DeliberateDriverLoaderApp.swift */,
+				3A8961CE2A1C7228001AE6BD /* SimpleDriverLoaderView.swift */,
+				3AE664462D90F1FE00AC55D1 /* SimpleDriverLoaderModel.swift */,
+				3A8961D02A1C7229001AE6BD /* Assets.xcassets */,
+				3A8961D22A1C7229001AE6BD /* DeliberateDriverLoader.entitlements */,
+				3A8961D32A1C7229001AE6BD /* Preview Content */,
+			);
+			path = DeliberateDriverLoader;
+			sourceTree = "<group>";
+		};
+		3A8961D32A1C7229001AE6BD /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				3A8961D42A1C7229001AE6BD /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		3A8961FB2A1C7276001AE6BD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3A89620B2A1C766A001AE6BD /* HIDDriverKit.framework */,
+				3A8961FC2A1C7276001AE6BD /* DriverKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3A8961FE2A1C7276001AE6BD /* DeliberateMouseDriver */ = {
+			isa = PBXGroup;
+			children = (
+				3A8961FF2A1C7276001AE6BD /* DeliberateMouseDriver.cpp */,
+				3A8962012A1C7276001AE6BD /* DeliberateMouseDriver.iig */,
+				3A8962032A1C7276001AE6BD /* Info.plist */,
+				3A75FB842A1DC3070017C880 /* DeliberateMouseDriver.entitlements */,
+			);
+			path = DeliberateMouseDriver;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		3A8961F52A1C7276001AE6BD /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		3A8961C82A1C7228001AE6BD /* DeliberateDriverLoader */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3A8961EC2A1C7229001AE6BD /* Build configuration list for PBXNativeTarget "DeliberateDriverLoader" */;
+			buildPhases = (
+				3A8961C52A1C7228001AE6BD /* Sources */,
+				3A8961C62A1C7228001AE6BD /* Frameworks */,
+				3A8961C72A1C7228001AE6BD /* Resources */,
+				3A89620A2A1C7276001AE6BD /* Embed System Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3A8962052A1C7276001AE6BD /* PBXTargetDependency */,
+			);
+			name = DeliberateDriverLoader;
+			productName = DeliberateDriverLoader;
+			productReference = 3A8961C92A1C7228001AE6BD /* DeliberateDriverLoader.app */;
+			productType = "com.apple.product-type.application";
+		};
+		3A8961F92A1C7276001AE6BD /* DeliberateMouseDriver */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3A8962072A1C7276001AE6BD /* Build configuration list for PBXNativeTarget "DeliberateMouseDriver" */;
+			buildPhases = (
+				3A8961F52A1C7276001AE6BD /* Headers */,
+				3A8961F62A1C7276001AE6BD /* Sources */,
+				3A8961F72A1C7276001AE6BD /* Frameworks */,
+				3A8961F82A1C7276001AE6BD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DeliberateMouseDriver;
+			productName = DeliberateMouseDriver;
+			productReference = 3A8961FA2A1C7276001AE6BD /* com.vestigl.DeliberateDriverLoader.DeliberateMouseDriver.dext */;
+			productType = "com.apple.product-type.driver-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3A8961BF2A1C71FC001AE6BD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1430;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					3A8961C82A1C7228001AE6BD = {
+						CreatedOnToolsVersion = 14.3;
+					};
+					3A8961F92A1C7276001AE6BD = {
+						CreatedOnToolsVersion = 14.3;
+					};
+				};
+			};
+			buildConfigurationList = 3A8961C22A1C71FC001AE6BD /* Build configuration list for PBXProject "DeliberateMacDrivers" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3A8961BE2A1C71FC001AE6BD;
+			productRefGroup = 3A8961CA2A1C7228001AE6BD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3A8961C82A1C7228001AE6BD /* DeliberateDriverLoader */,
+				3A8961F92A1C7276001AE6BD /* DeliberateMouseDriver */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3A8961C72A1C7228001AE6BD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3A8961D52A1C7229001AE6BD /* Preview Assets.xcassets in Resources */,
+				3A8961D12A1C7229001AE6BD /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3A8961F82A1C7276001AE6BD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3A8961C52A1C7228001AE6BD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3A8961CF2A1C7228001AE6BD /* SimpleDriverLoaderView.swift in Sources */,
+				3A8961CD2A1C7228001AE6BD /* DeliberateDriverLoaderApp.swift in Sources */,
+				3AE664472D90F1FE00AC55D1 /* SimpleDriverLoaderModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3A8961F62A1C7276001AE6BD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3A8962022A1C7276001AE6BD /* DeliberateMouseDriver.iig in Sources */,
+				3A8962002A1C7276001AE6BD /* DeliberateMouseDriver.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3A8962052A1C7276001AE6BD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3A8961F92A1C7276001AE6BD /* DeliberateMouseDriver */;
+			targetProxy = 3A8962042A1C7276001AE6BD /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		3A8961C32A1C71FC001AE6BD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Debug;
+		};
+		3A8961C42A1C71FC001AE6BD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Release;
+		};
+		3A8961ED2A1C7229001AE6BD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_ENTITLEMENTS = DeliberateDriverLoader/DeliberateDriverLoader.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_ASSET_PATHS = "\"DeliberateDriverLoader/Preview Content\"";
+				DEVELOPMENT_TEAM = "";
+				ENABLE_CODE_COVERAGE = NO;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 13.3;
+				MARKETING_VERSION = 1.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.vestigl.DeliberateDriverLoader;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3A8961EE2A1C7229001AE6BD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_ENTITLEMENTS = DeliberateDriverLoader/DeliberateDriverLoader.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_ASSET_PATHS = "\"DeliberateDriverLoader/Preview Content\"";
+				DEVELOPMENT_TEAM = "";
+				ENABLE_CODE_COVERAGE = NO;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_PREVIEWS = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 13.3;
+				MARKETING_VERSION = 1.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.vestigl.DeliberateDriverLoader;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		3A8962082A1C7276001AE6BD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_ENTITLEMENTS = DeliberateMouseDriver/DeliberateMouseDriver.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = "";
+				DRIVERKIT_DEPLOYMENT_TARGET = 22.4;
+				ENABLE_CODE_COVERAGE = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = DeliberateMouseDriver/Info.plist;
+				INFOPLIST_KEY_OSBundleUsageDescription = "";
+				MARKETING_VERSION = 1.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.vestigl.DeliberateDriverLoader.DeliberateMouseDriver;
+				PRODUCT_NAME = "$(inherited)";
+				RUN_CLANG_STATIC_ANALYZER = YES;
+				SDKROOT = driverkit;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+			};
+			name = Debug;
+		};
+		3A8962092A1C7276001AE6BD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_ENTITLEMENTS = DeliberateMouseDriver/DeliberateMouseDriver.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = "";
+				DRIVERKIT_DEPLOYMENT_TARGET = 22.4;
+				ENABLE_CODE_COVERAGE = NO;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = DeliberateMouseDriver/Info.plist;
+				INFOPLIST_KEY_OSBundleUsageDescription = "";
+				MARKETING_VERSION = 1.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.vestigl.DeliberateDriverLoader.DeliberateMouseDriver;
+				PRODUCT_NAME = "$(inherited)";
+				RUN_CLANG_STATIC_ANALYZER = YES;
+				SDKROOT = driverkit;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3A8961C22A1C71FC001AE6BD /* Build configuration list for PBXProject "DeliberateMacDrivers" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3A8961C32A1C71FC001AE6BD /* Debug */,
+				3A8961C42A1C71FC001AE6BD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3A8961EC2A1C7229001AE6BD /* Build configuration list for PBXNativeTarget "DeliberateDriverLoader" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3A8961ED2A1C7229001AE6BD /* Debug */,
+				3A8961EE2A1C7229001AE6BD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3A8962072A1C7276001AE6BD /* Build configuration list for PBXNativeTarget "DeliberateMouseDriver" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3A8962082A1C7276001AE6BD /* Debug */,
+				3A8962092A1C7276001AE6BD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3A8961BF2A1C71FC001AE6BD /* Project object */;
+}

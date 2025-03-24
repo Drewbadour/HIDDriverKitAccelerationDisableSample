@@ -1,0 +1,35 @@
+//
+//  DeliberateMouseDriver.iig
+//  DeliberateMouseDriver
+//
+// See the LICENSE.txt file for this sample’s licensing information.
+//
+// Abstract:
+// A mouse driver that disables acceleration for both the mouse cursor and scroll wheel.
+// Uses a standard HID match, which doesn't require any restricted entitlements.
+// By overriding `handleReport`, the driver can intercept all HID packets and remove acceleration.
+//
+
+#ifndef DeliberateMouseDriver_h
+#define DeliberateMouseDriver_h
+
+#include <Availability.h>
+#include <HIDDriverKit/IOUserHIDEventService.iig>
+
+class IOHIDElement;
+
+class DeliberateMouseDriver: public IOUserHIDEventService
+{
+public:
+	virtual bool init(void) override;
+	virtual kern_return_t Start(IOService* provider) override;
+	virtual kern_return_t Stop(IOService* provider) override;
+	virtual void free(void) override;
+
+	virtual bool parseMouseElements(OSArray* deviceElements) LOCALONLY;
+
+	virtual void handleReport(uint64_t timestamp, uint8_t* report, uint32_t reportLength, IOHIDReportType type, uint32_t reportID) override LOCALONLY;
+	virtual void handleMouseReport(uint64_t timestamp, uint32_t reportID) LOCALONLY;
+};
+
+#endif /* DeliberateMouseDriver_h */
