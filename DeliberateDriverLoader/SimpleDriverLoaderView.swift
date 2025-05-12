@@ -14,7 +14,7 @@ import SystemExtensions
 
 struct SimpleDriverLoadingView: View {
 
-	@EnvironmentObject var model: SimpleDriverLoaderModel
+	@StateObject var model: SimpleDriverLoaderModel = SimpleDriverLoaderModel()
 
 	var body: some View {
 		VStack {

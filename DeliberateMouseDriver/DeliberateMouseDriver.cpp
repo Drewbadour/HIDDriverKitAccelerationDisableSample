@@ -419,9 +419,10 @@ void DeliberateMouseDriver::handleMouseReport(uint64_t timestamp, uint32_t repor
 	}
 
 	// Passing kIOHIDPointerEventOptionsNoAcceleration/kIOHIDScrollEventOptionsNoAcceleration
-	// are the same as passing false to the acceleration parameter of these methods.
-	// These arguments are included for completeness only, and are not required to disable acceleration if you pass false.
-	// However, passing one of the NoAcceleration flags will override the boolean state of acceleration.
+	// are THEORETICALLY the same as passing false to the acceleration parameter of these methods.
+	// It's included in the `dispatchRelativePointerEvent` for completeness,
+	// but if you pass both `kIOHIDScrollEventOptionsNoAcceleration` and `false` to `dispatchRelativeScrollWheelEvent`,
+	// then macOS will simply ignore all scroll input. So don't do that.
 	dispatchRelativePointerEvent(timestamp, dX, dY, ivars->buttonState, kIOHIDPointerEventOptionsNoAcceleration, false);
-	dispatchRelativeScrollWheelEvent(timestamp, scrollVert, 0, 0, kIOHIDScrollEventOptionsNoAcceleration, false);
+	dispatchRelativeScrollWheelEvent(timestamp, scrollVert, 0, 0, 0, false);
 }

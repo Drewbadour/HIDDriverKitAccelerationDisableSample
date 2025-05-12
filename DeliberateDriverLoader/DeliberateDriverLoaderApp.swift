@@ -14,7 +14,7 @@ import SwiftUI
 struct DeliberateDriverLoaderApp: App {
 	var body: some Scene {
 		WindowGroup {
-			ContentView()
+			SimpleDriverLoadingView()
 		}
 	}
 }
